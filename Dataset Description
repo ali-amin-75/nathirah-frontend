@@ -1,0 +1,39 @@
+Dataset Description
+The dataset used in this project is obtained from The Cancer Imaging Archive (TCIA), a publicly available and widely used repository for medical imaging research.
+For this project, we use a Breast MRI dataset that contains real MRI scans of breast cancer patients.
+
+1. Type of Data
+ • Breast MRI images (2D slices or 3D volumes depending on the collection).
+ • Images are provided in DICOM or NIfTI format.
+ • Each scan belongs to a real patient but is fully anonymized.
+
+2. Labels
+ • Each MRI image is associated with a recurrence label:
+ • 0 → No recurrence
+ • 1 → Recurrence
+ • Label information is taken from the dataset’s metadata file provided by TCIA.
+
+3. Dataset Components
+ • MRI images.
+ • Metadata file containing:
+ • Patient ID
+ • Recurrence information (0/1)
+ • Basic clinical notes if available (not used in our project)
+
+4. Why We Use This Dataset
+ • It is public, ethically safe, and does not require hospital approval.
+ • It contains real MRI scans, making the model more realistic.
+ • It is commonly used in research, which improves reliability and reproducibility.
+
+5. How It Is Used in Our Project
+
+We use this dataset to:
+ • Preprocess MRI images (resize, cleaning, normalization)
+ • Build the training, validation, and testing splits
+ • Train the CNN to detect recurrence patterns
+ • Evaluate model accuracy
+
+6. Ethical & Privacy Considerations
+ • All images are anonymized by TCIA.
+ • No personal patient identifiers are included.
+ • The project uses only open-source data—no private hospital records.
